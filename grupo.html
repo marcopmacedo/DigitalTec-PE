@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concluido!</title>
+    <link rel="icon" href="img/Design sem nome.png">
+    <link rel="stylesheet" href="grupo.css">
+</head>
+<body>
+
+    <div class="selo">
+        <img class="seloImg" src="img/selo.png" alt="">
+    </div>
+
+    <div class="conteudo">
+        <h1>Grupo escolhido!</h1>
+
+        <h3>
+            Parabéns<br>
+            Seu grupo foi escolhido com<br>
+            sucesso!!
+        </h3><br><br>
+    
+        <h2>Seu grupo:</h2>
+        <span class="grupoSelecionadoStyle" id="grupoSelecionado"></span> <!-- Elemento para exibir o valor selecionado -->
+        <br><br><br><br>
+        <!--<button onclick="goBack()">Voltar</button> Botão para voltar à página anterior-->
+    </div>
+
+    <div class="LogoDiv">
+        <img class="logo" src="img/LOGO.jpg" alt="">
+    </div>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const urlParams = new URLSearchParams(window.location.search);
+          const grupo = urlParams.get("grupo");
+      
+          const grupoElement = document.getElementById("grupoSelecionado");
+          grupoElement.textContent = grupo;
+        });
+        
+        /*function goBack() {
+          window.history.back();
+        }*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigitalTec PE</title>
+    <link rel="icon" href="img/Design sem nome.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="logo">
+      <img class="imglogo" src="img/LOGO.jpg" alt="" />
+    </div>
+
+    <header class="header">
+      <ul class="menu">
+        <a class="menubt" href="#sobre">Sobre</a>
+        <a class="menubt" href="#formularios">Formularios</a>
+      </ul>
+    </header>
+    <br /><br /><br /><br />
+
+    <div id="sobre" class="sobre">
+      <h1>SOBRE:</h1>
+      <br />
+      <div class="sobrereal">
+        <p class="pj">
+          O DigitalTec é um evento de tecnologia, que irá envolver assuntos como: MetaVerso e
+          .IA(inteligência artificial) Segurança digital. Que ocorrerá entre os dias 6 a 9 de Julho
+          terá grandes palestras com pessoas especializadas nos assuntos e será realizado em Recife,
+          perto do Marco-Zero.
+        </p>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div id="formularios" class="formr">
+      <form action="">
+        <div class="Dados">
+          <label for="name">Nome</label><br />
+          <input
+            class="texto"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Marco Macedo"
+          /><br /><br />
+          <label for="email">Email</label><br />
+          <input
+            class="texto"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="marcomacedo@gmai.com"
+          /><br /><br /><br />
+
+          <div class="sex">
+            <label for="sexo">Sexo</label><br /><br />
+            <input type="radio" name="sexo" id="masculino" />
+            <label for="masculino">Masculino</label><br />
+            <input type="radio" name="sexo" id="feminino" />
+            <label for="feminino">Feminino </label><br />
+            <input type="radio" name="sexo" id="outros" />
+            <label for="outros">Outros</label>
+          </div>
+          <br />
+        </div>
+        <br /><br />
+
+        <h1 style="text-align: center">Escolha seu grupo</h1>
+        <br />
+
+        <div class="Group" id="grupos">
+          <div id="grupos" class="grupos">
+            <h1 style="text-align: center;">Metaverso</h1>
+            <h3>Green</h3>
+            <li>
+              Por que experiência reais com pessoas são importante para o desenvolvimento do
+              metaversos?
+            </li>
+            <input class="bola" value="Green" type="radio" name="grupos" id="teste" />
+          </div>
+          <br />
+          <div id="grupos" class="grupos">
+            <h1 style="text-align: center;">Segurnça digital</h1>
+            <h3>Blue</h3>
+            <li>Como proteger nossas senhas?</li>
+            <li>Sistemas de antivírus</li>
+            <li>Como usar a LGPD na sua empresa ou ao seu favor?</li>
+            <input class="bola" value="Blue" type="radio" name="grupos" id="teste" />
+          </div>
+          <br />
+          <div id="grupos" class="grupos">
+            <h1 style="text-align: center;">Inteligência Artificial(I.A)</h1>
+            <h3>Red</h3>
+            <li>Como influência na nossa vida?</li>
+            <li>Como pode ser usado ao nosso favor?</li>
+            <input class="bola" value="Red" type="radio" name="grupos" id="teste" />
+          </div>
+          <br /><br />
+        </div>
+        <div class="btnDiv">
+          <input class="btn" type="button" name="send" id="send" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!--EU TENTEI FAZER TUDO DO ZERO(MENOS A PARTE QUE TEM ENVOLVIMENTO DIRETO COM O JAVASCRIPT)
+ESSE DEVE SER UM DOS PRINCIPAIS MOTIVOS DE ESTA DANDO ERRO!!
+-->
